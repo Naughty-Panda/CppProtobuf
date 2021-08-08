@@ -4,12 +4,34 @@
 //////////////////////////////////////////
 
 #include <iostream>
+#pragma comment (lib, "lib/libprotobuf.lib")
 
 //////////////////////////////////////////
-// 7.1
+// 7.2
 //////////////////////////////////////////
+
+#include "Classes.pb.h"
+
+//////////////////////////////////////////
+// 7.3
+//////////////////////////////////////////
+
+class IRepository {
+
+};
+
+class IMethods {
+
+};
+
+class StudentsGroup : public IRepository, public IMethods {
+
+};
+
 
 int main() {
+
+	std::cout << "Hello\n";
 
 	return 0;
 }
